@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.ifgi.musil.edresources</groupId>
+	<artifactId>cncaSchema</artifactId>
+	<version>0.0.1</version>
+
+	<properties>
+		<!--maven variable which points to your local repository -->
+		<internal.repo.path>file://C:/Dokumente und Einstellungen/Kiesow.GEOINFORMATIK/Eigene Dateien/GitHub/mvn-repo/</internal.repo.path>
+	</properties>
+
+	<distributionManagement>
+		<repository>
+			<id>internal.repo</id>
+			<name>Internal Repository</name>
+			<url>${internal.repo.path}</url>
+		</repository>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>2.6.0</version>
+		</dependency>
+	</dependencies>
+</project>
